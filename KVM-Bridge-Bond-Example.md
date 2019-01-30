@@ -87,6 +87,28 @@ iface br0 inet static
 
 In this example, br1 is anonymous, 1 NIC, connected to outbound router; br0 is a bond of 2 NICs.
 
+If using netplan, example:
+
+```
+bridges:
+    br0:
+        addresses: [ 172.16.4.5/22 ]
+        gateway4: 172.16.4.1
+        nameservers:
+                 addresses: [8.8.8.8, 8.8.4.4]
+        dhcp4: no
+        interfaces: [bond0, enp59s0f0, enp59s0f1]
+bonds:
+    bond0:
+        dhcp4: no
+     interfaces: [enp26s0f0, enp26s0f1]
+     parameters:
+               mode: 802.3ad
+               mii-monitor-interval: 100
+               lacp-rate: fast
+               transmit-hash-policy: layer2+3
+```
+
 Finally, bring up your network again:
 
 `sudo start networking`
