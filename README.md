@@ -1,3 +1,3 @@
 # Metal as a Service
 
-Topics related to bare metal automation.
+Topics, documentation related to bare metal automation.

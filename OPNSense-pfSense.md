@@ -1,8 +1,8 @@
-2FA w/ Google Authenticator:
+# Enable 2FA With Google Authenticator
 
 https://wiki.opnsense.org/manual/how-tos/two_factor.html
 
-Creating OpenVPN:
+# Creating OpenVPN
 
 https://www.sparklabs.com/support/kb/article/setting-up-an-openvpn-server-with-opnsense-and-viscosity/
 

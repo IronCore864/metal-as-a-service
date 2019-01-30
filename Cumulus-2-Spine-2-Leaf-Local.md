@@ -21,6 +21,8 @@ Here VirtualBox is used.
 - CumulusVX-spine1 and CumulusVX-spine2.
 - After this step you will have 4 VMs:
 
+![alt text](cumulus-local-vms.png)
+
 # 4 FRR Daemon Configuration
 
 Do it on all 4 VMs.
